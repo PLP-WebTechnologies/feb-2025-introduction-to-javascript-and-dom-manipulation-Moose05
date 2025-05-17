@@ -1,11 +1,19 @@
 function changeText() {
   const textEl = document.getElementById('dynamicText');
-  textEl.textContent = "Text Changed Dynamically!";
+  textEl.textContent = "Welcome to your dynamic page";
 }
 
 function toggleStyle() {
-  const textEl = document.getElementById('dynamicText');
-  textEl.classList.toggle('highlight');
+  const box = document.getElementById('box');
+  if (box) {
+    if (box.classList.contains('left')) {
+      box.classList.remove('left');
+      box.classList.add('right');
+    } else {
+      box.classList.remove('right');
+      box.classList.add('left');
+    }
+  }
 }
 
 function addOrRemoveBox() {
@@ -17,7 +25,13 @@ function addOrRemoveBox() {
   } else {
     const box = document.createElement('div');
     box.id = 'box';
-    box.className = 'box';
+    box.className = 'box left'; // Start with "left" position
+
+    const img = document.createElement('img');
+    img.src = 'https://via.placeholder.com/200'; // Replace with your own image URL if desired
+    img.alt = 'Dynamic Box Image';
+
+    box.appendChild(img);
     container.appendChild(box);
   }
 }
