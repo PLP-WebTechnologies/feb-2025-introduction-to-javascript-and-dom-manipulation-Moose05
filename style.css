@@ -1,1 +1,23 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
 
+#dynamicText {
+  font-size: 24px;
+  color: blue;
+}
+
+.highlight {
+  color: red;
+  font-weight: bold;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: lightgreen;
+  margin: 20px auto;
+  border-radius: 8px;
+}
