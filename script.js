@@ -28,7 +28,7 @@ function addOrRemoveBox() {
     box.className = 'box left'; // Start with "left" position
 
     const img = document.createElement('img');
-    img.src = 'https://via.placeholder.com/200'; // Replace with your own image URL if desired
+    img.src = 'https://via.placeholder.com/200'; 
     img.alt = 'Dynamic Box Image';
 
     box.appendChild(img);
